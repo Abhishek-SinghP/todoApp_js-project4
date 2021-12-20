@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="./images/unnamed.png">
+</head>
+<body>
+    <div class="background" id="backGround">
+        <div class="container">
+            <div class="top-container">
+                <div class="left-content">
+                    <span class="text-bold">Todo</span>
+                    <span class="text-light">Lists</span>
+                </div>
+
+                <div class="right-content">
+                    <i class="fas fa-plus-circle add-button" id="list_Add_Btn_1"></i>
+                    <span class="text-small" id="list_Add_Btn_2">Add List</span>  
+                </div>
+            </div>
+            
+            <div class="bottom-container" id="list_Container"></div>
+        </div>
+    </div>
+
+    <!-- ADD LIST POP-UP BOX -->
+    <div class="add-list-popup" id="dispay_List_Modal">
+        <span class="popup-heading">Add New List</span>
+        <input type="text" id="create_ListTitle" placeholder="List Title">
+        <button type="submit" id="create_List">ADD</button>
+        <i class="fas fa-arrow-circle-left back-button" id="list_Back_Btn"></i>
+    </div>
+    
+    <!-- ADD TASK POP-UP BOX -->
+    <div class="add-task-popup" id="display_Task_Modal">
+        <span class="popup-heading">Add New Task</span>
+        <input type="text" id="create_TaskTitle" placeholder="Add your new Todo">
+        <button type="submit" id="create_Task">ADD</button>
+        <i class="fas fa-arrow-circle-left back-button" id="task_Back_Btn"></i>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
